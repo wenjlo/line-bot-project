@@ -115,7 +115,7 @@ class LineBot:
             self.line_bot_api.push_message(
                 target_group_id,
                 FlexSendMessage(
-                    alt_text="[影音公告] 6 則影片通知，請左右滑動",
+                    alt_text=f"[影音公告] {len(bubble_contents)} 則影片通知，請左右滑動",
                     contents=carousel_flex_message
                 )
             )
